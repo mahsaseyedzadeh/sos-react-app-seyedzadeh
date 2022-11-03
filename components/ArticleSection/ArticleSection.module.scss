@@ -1,0 +1,22 @@
+@import '../../styles/variables.module.scss';
+.container{
+  margin-top: $tripleGutter;
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $gutter;
+    .title{
+      font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;  
+        color: $dark-gray-color;
+    }
+    .linkedTo{
+      font-weight: 600;
+        font-size: 16px;
+        color: $sos-primary;
+
+    }
+  }
+}
