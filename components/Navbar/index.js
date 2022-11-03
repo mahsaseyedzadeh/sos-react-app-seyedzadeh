@@ -1,6 +1,4 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
 import styles from "./Navbar.module.scss";
 
 export const Navbar = ({ children }) => {
@@ -11,9 +9,7 @@ export const Navbar = ({ children }) => {
   );
 };
 
-export const NavbarItem = ({
-  link, label, classes, target }) => {
-
+export const NavbarItem = ({ link, label, classes, target }) => {
   return (
     <li className={`${classes} ${styles.navItem}`}>
       {target !== undefined && target === "_blank" ? (

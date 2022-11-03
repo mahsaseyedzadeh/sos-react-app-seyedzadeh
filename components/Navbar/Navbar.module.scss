@@ -1,8 +1,9 @@
 @import "../../styles/variables.module.scss";
 .navbar {
 	z-index: 10;
-	margin: 0  $gutterNeg;
-  padding: $gutter 0
+	// margin: 0 $gutterNeg;
+	padding: $gutter 0;
+	flex: 1 1 0;
 }
 
 .navbarNav {
@@ -16,10 +17,11 @@
 	z-index: 10;
 	height: 100%;
 	margin: 0;
+	justify-content: space-around;
 }
 
 .navItem {
-	color: $sos-blue;
+	color: $sos-primary;
 	padding: 0 15px;
 	z-index: 10;
 	display: inline-block;
@@ -36,14 +38,10 @@
 }
 
 .navLink {
-	color: $sos-blue;
+	color: $sos-primary;
 	display: block;
 
 	line-height: 54px;
-  font-weight: 400;
-    font-size: 14px;
-
-	// @media screen and (min-device-width: $extra-Small-size) and (max-device-width: $large-size) {
-	// 	font-size: 12px;
-	// }
+	font-weight: 400;
+	font-size: 14px;
 }

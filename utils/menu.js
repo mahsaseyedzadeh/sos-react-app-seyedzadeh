@@ -15,8 +15,8 @@ export const menuItems = [
 
   {
     id: 2,
-    label: "درباره ما",
-    url: "/about-us",
+    label: "todoList",
+    url: "/todo-list",
     class: "",
 
   },

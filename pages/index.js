@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <Layout>
       <main className='main'>
-
+        <ArticleSection />
       </main>
     </Layout>
   );
