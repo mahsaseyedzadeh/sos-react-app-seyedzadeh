@@ -1,0 +1,136 @@
+@import "../styles/variables.module.scss";
+
+:root {
+	--color-primary: #052a60;
+	--color-black: #141414;
+	--color-white: #fff;
+	--color-error: #db2509;
+	--color-success: #00b785;
+	--real100vh: 100vh;
+}
+
+//iransan
+
+@font-face {
+	font-family: IRANSans;
+	src: url("../public/fonts/IRANSansXV.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+
+
+body,
+html {
+	font-family: "IRANSans", sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	direction: rtl;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+	width: 100% !important;
+}
+
+body {
+	background-color: #fff;
+
+}
+
+a {
+	text-decoration: none !important;
+
+
+	&:hover {
+		color: inherit;
+	}
+}
+
+button {
+	border: none;
+	background: unset;
+	cursor: pointer;
+}
+
+pre {
+	font-family: inherit;
+	white-space: pre-line;
+}
+
+ol,
+ul,
+dl {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+button,
+input,
+textarea {
+	font-family: inherit;
+
+	&:focus,
+	&:active {
+		outline: none;
+	}
+}
+
+.container-fluid {
+	width: 100%;
+	padding-right: 16px;
+	padding-left: 16px;
+	margin-right: auto;
+	margin-left: auto;
+
+	@media screen and (max-width: 61.99em) {
+		min-width: 100%;
+		max-width: 100%;
+	}
+}
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 16px;
+	padding-left: 16px;
+
+	@media screen and (min-width: 992px) {
+		max-width: 960px;
+	}
+
+	@media screen and (max-width: 61.99em) {
+		min-width: 100%;
+		max-width: 100%;
+	}
+
+	@media (min-width: 1200px) {
+		max-width: 1240px;
+	}
+}
+
+.mt-5 {
+	margin-top: 32px;
+}
+
+#root {
+	height: 100%;
+}
+
+.body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.main {
+	max-width: 1440px !important;
+	margin: 0 auto;
+}
+
