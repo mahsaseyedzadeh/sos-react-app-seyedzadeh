@@ -13,13 +13,16 @@ const Card = () => {
 
       <h3 className={styles.cardTitle}>راهنمای دریافت معرفی‌نامه</h3>
       <span className={styles.createdTime}>
-        asss
+        ۵ دقیقه
       </span>
       <p className={styles.content}>
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و...
       </p>
-      <Link href={"/article/2"}>
-        ادامه
+      <Link href={"/articles/2"} className={styles.Link}>
+        <span>
+          ادامه
+        </span>
+
       </Link>
 
     </div>
