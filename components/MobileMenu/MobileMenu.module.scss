@@ -1,0 +1,90 @@
+@import "../../styles/variables.module.scss";
+
+.burgerMenu {
+	height: 100%;
+	width: 296px;
+	background: #fff;
+	position: fixed;
+	z-index: 1000000;
+	transition: 0.5s;
+	right: 0;
+	top: 0;
+	transform: translateX(100%);
+
+	.closeIconRow {
+		text-align: left;
+	}
+
+
+	ul {
+		list-style: none;
+		padding: unset;
+		margin: unset;
+
+		li {
+			border-bottom: 1px solid#eeebeb;
+			padding: $gutter;
+		}
+	}
+
+	@media screen and (min-width: 992px) {
+		display: none;
+	}
+}
+
+.open {
+	transform: translateX(0);
+}
+
+.IconBox {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	overflow: hidden;
+	flex-direction: column;
+	margin: $halfGutter;
+}
+
+.Icon {
+	display: block;
+	border-bottom: 3px solid $dark-gray-color;
+	border-radius: 5px;
+	margin: 2px;
+
+	@media screen and (min-width: 992px) {
+		display: none;
+	}
+}
+
+.mobileNav {
+	z-index: 100000;
+	width: 100%;
+	left: 0;
+	top: 0;
+	height: 64px;
+	margin-bottom: $halfGutter;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: $gutter 0 0 $halfGutter;
+
+	@media screen and (min-width: $medium-size) {
+		display: none;
+	}
+}
+
+.blueNav {
+	background-color: $sos-primary;
+}
+
+.loginIcon {
+	display: inline-block;
+	margin-left: $halfGutter;
+}
+
+.loginButton {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 34px;
+	padding: $halfGutter $gutter;
+}

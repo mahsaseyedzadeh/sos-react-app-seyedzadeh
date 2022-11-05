@@ -132,5 +132,9 @@ textarea {
 .main {
 	max-width: 1440px !important;
 	margin: 0 auto;
+	padding: $gutter;
+	@media screen and (min-width: $medium-size) {
+			padding: none;
+		}
 }
 

@@ -7,8 +7,8 @@ export const menuItems = [
   },
   {
     id: 1,
-    label: "بلاگ",
-    url: "/blog",
+    label: "مراکز خدمات درمانی",
+    url: "/",
     class: "",
 
   },
@@ -22,14 +22,14 @@ export const menuItems = [
   },
   {
     id: 3,
-    label: "تماس با ما",
+    label: "شعبه‌های ما",
     url: "/contact",
     class: "",
 
   },
   {
     id: 4,
-    label: " قوانین و مقررات",
+    label: " سوال‌‌های متداول",
     url: "/rules",
     class: "",
 
