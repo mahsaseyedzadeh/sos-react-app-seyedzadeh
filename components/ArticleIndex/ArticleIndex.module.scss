@@ -1,0 +1,42 @@
+@import "../../styles/variables.module.scss";
+.container {
+	margin: $doubleGutter 0 ;
+
+}
+.gallery {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	border-radius: $doubleGutter;
+	overflow: hidden;
+	.img {
+		width: 100%;
+	}
+}
+.content {
+	padding: 0 $doubleGutter;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: inherit;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	.title {
+		margin-bottom: $gutter;
+		font-size: 20px;
+	}
+	.text {
+		color: $light-gray-color;
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.date {
+		flex: 1 1;
+		display: flex;
+		justify-content: flex-end;
+		align-items: end;
+    font-size: 18px;
+    font-weight: 500;
+    color: $medium-gray-color;
+	}
+}

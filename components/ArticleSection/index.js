@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid';
 import Card from "../Card";
 
 
-const ArticleSection = () => {
+const ArticleSection = ({ posts }) => {
   return (
     <section className={styles.container}>
       <header className={styles.header}>
@@ -15,19 +15,12 @@ const ArticleSection = () => {
           نمایش همه
         </Link>
       </header>
-      <Grid container spacing={3}>
-        <Grid item xs={12} md={4} lg={3}>
-          <Card />
-        </Grid>
-        <Grid item xs={12} md={4} lg={3}>
-          <Card />
-        </Grid>
-        <Grid item xs={12} md={4} lg={3}>
-          <Card />
-        </Grid>
-        <Grid item xs={12} md={4} lg={3}>
-          <Card />
-        </Grid>
+      <Grid container spacing={2}>
+        {posts?.map((post, index) => (
+          <Grid key={index} item xs={12} md={4} lg={3}>
+            <Card value={post} />
+          </Grid>
+        ))}
 
       </Grid>
 
