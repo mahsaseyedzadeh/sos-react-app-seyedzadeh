@@ -21,6 +21,10 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+	margin-top: $gutter;
+		@media screen and (min-width: 992px) {
+	margin-top: unset;
+			}
 	.title {
 		margin-bottom: $gutter;
 		font-size: 20px;

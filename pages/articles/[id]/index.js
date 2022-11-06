@@ -1,31 +1,27 @@
-import Card from "../../../components/Card";
+
 import Layout from "../../../components/layout";
 import ArticleIndex from "../../../components/ArticleIndex";
 import { useEffect, useState } from "react";
-import axios from "axios";
 import { useRouter } from "next/router";
+import { getArticle } from '../../../api/Article'
 
 const Article = ({ post }) => {
   const router = useRouter();
   const [article, setArticle] = useState(null);
 
   useEffect(() => {
-    console.log("hereeee", router.query.id);
     if (router.query.id) {
-      getArticle()
+      getArticle(router.query.id).then((response) => {
+        setArticle(response)
+      }).catch((error) => {
+        // @todo error handler
+        console.log(error.message)
+      })
+
     }
   }, [router.isReady]);
 
-  const getArticle = () => {
-    axios.get(`${process.env.server}/posts/${router.query.id}`)
-      .then((res) => {
-        setArticle(res.data);
-      })
-      .catch((err) => {
-        // @todo error handler
-        console.log(err.message);
-      });
-  };
+
 
   return (
     <Layout>
