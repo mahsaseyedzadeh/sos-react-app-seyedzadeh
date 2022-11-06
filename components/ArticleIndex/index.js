@@ -8,6 +8,7 @@ const ArticleIndex = ({ value }) => {
     <Grid container className={styles.container}>
       <Grid item xs={12} md={6}>
         <div className={styles.gallery}>
+          {/* @todo add placeholder to image */}
           <Image src={value?.src} alt={"sos logo"} title={"sos logo"} className={styles.img} layout='fill' />
         </div>
       </Grid>
