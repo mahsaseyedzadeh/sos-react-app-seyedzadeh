@@ -10,7 +10,6 @@ const Article = ({ post }) => {
   const [article, setArticle] = useState(null);
 
   useEffect(() => {
-    console.log("hereeee", router.query.id);
     if (router.query.id) {
       getArticle()
     }
