@@ -5,14 +5,14 @@ import EmptyCard from '../Global/EmptyCard'
 
 const DisplayTodo = () => {
 
-  const { todoList, removeTodo } = useContext(TodoListContext)
+  const { todoList, removeTodo, markTodo } = useContext(TodoListContext)
 
   return (
     <div className={style.wrapper}>
       {todoList.length > 0 ?
         <ul>
           {todoList.map((item, index) => (
-            <li key={item} >
+            <li className={item.isDone ? style.isDone : ""} key={item} onClick={() => { markTodo(index) }}>
               {item.text}
               <span className={style.remove} onClick={() => removeTodo(index)}>
                 remove
@@ -26,7 +26,7 @@ const DisplayTodo = () => {
 
       }
 
-    </div>
+    </div >
 
   )
 }
