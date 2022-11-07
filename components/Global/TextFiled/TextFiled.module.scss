@@ -1,0 +1,74 @@
+@import "../../../styles/variables.module.scss";
+
+.formBox {
+  margin-bottom: 2rem;
+  position: relative;
+
+  input {
+    height: 50px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #c5c7cd;
+    padding: 8px 10px 0 14px;
+    line-height: 50px;
+    color: $dark-gray-color;
+    font-size: 13px;
+    background: #ffffff;
+
+    &::placeholder {
+      color: $dark-gray-color;
+      font-size: 14px;
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+
+    @media screen and (min-width: $small-size) {
+      font-weight: 400;
+      font-size: 18px;
+      color: $dark-gray-color;
+    }
+  }
+
+  textarea {
+    min-height: 100px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #c5c7cd;
+    padding: 15px 10px;
+    line-height: 25px;
+    color: #222;
+    font-size: 13px;
+    background: transparent;
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+
+    @media screen and (min-width: $small-size) {
+      font-weight: 400;
+      font-size: 18px;
+      color: $dark-gray-color;
+      min-height: 100px;
+    }
+  }
+
+  >label,
+  >div>label,
+  >div>div>label {
+    position: absolute;
+    font-family: Dana, serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: right;
+    color: $dark-gray-color;
+    z-index: 1;
+    right: 12px;
+    background-color: #ffffff;
+    top: -12px;
+    padding: 0 3px;
+  }
+}

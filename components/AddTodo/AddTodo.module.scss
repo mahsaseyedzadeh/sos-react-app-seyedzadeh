@@ -1,0 +1,12 @@
+@import "../../styles/variables.module.scss";
+.wrapper {
+	h4 {
+		width: 100%;
+		font-weight: normal;
+		font-size: 18px;
+		text-align: center;
+		padding: $gutter;
+		color: lighten($sos-primary, 20);
+		line-height: 40px;
+	}
+}

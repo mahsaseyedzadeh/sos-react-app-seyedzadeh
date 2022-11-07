@@ -134,7 +134,10 @@ textarea {
 	margin: 0 auto;
 	padding: $gutter;
 	@media screen and (min-width: $medium-size) {
-			padding: none;
+			padding: unset;
 		}
 }
 
+.text-danger{
+	color:$danger-color;
+}
