@@ -12,10 +12,18 @@ const DisplayTodo = () => {
       {todoList.length > 0 ?
         <ul>
           {todoList.map((item, index) => (
-            <li className={item.isDone ? style.isDone : ""} key={item} onClick={() => { markTodo(index) }}>
-              {item.text}
+            <li className={item.isDone ? "" : ""} key={item} >
+
+              <span className={`${style.text} ${item.isDone ? style.isDone : ""}`}>
+                {item.text}
+              </span>
+
+
               <span className={style.remove} onClick={() => removeTodo(index)}>
                 remove
+              </span>
+              <span className={style.mark} onClick={() => { markTodo(index) }}>
+                mark
               </span>
             </li>
           ))}
