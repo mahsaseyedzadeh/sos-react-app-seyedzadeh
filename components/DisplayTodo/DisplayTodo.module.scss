@@ -16,10 +16,14 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			.remove {
-				cursor: pointer;
+			.text{
+				flex: 1 1;
 			}
-			&.isDone {
+			.remove,.mark {
+				cursor: pointer;
+				margin-right: $gutter;
+			}
+			span.isDone {
 				text-decoration: line-through;
 			}
 		}
